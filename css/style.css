@@ -1,0 +1,1094 @@
+/*  ================================
+        global area start
+    ================================ */
+
+body {
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    color: #1a1a1a;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        Header area start
+    ================================ */
+
+.main-div {
+    background: rgba(0, 0, 0, 0) url("../img/background.jpg") repeat;
+}
+
+.header-area {
+    padding: 30px 0;
+}
+
+.logo {
+    display: inline-block;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+    float: right;
+    z-index: 10;
+    margin-bottom: 5px;
+    border: 3px solid #039C46;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    padding-right: 46px;
+}
+
+/******** menu part start ********/
+
+#menu-switcher,
+.navbar-header > label,
+.switch {
+    display: none;
+}
+
+.menu-container label::before {
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 5px 0 0 #fff, 0 0 0 0 inset, 0 -5px 0 0 #fff;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+}
+
+.switch {
+    width: 100%;
+    float: left;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+}
+
+.menu-container label {
+    background-color: #039C46 !important;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    padding: 0;
+    position: absolute !important;
+    right: 40px;
+    top: 12px;
+    width: 40px;
+    z-index: 9999;
+    border: 1px solid #039C46;
+}
+
+.header-top-menu {
+    min-height: 0;
+    margin-bottom: 0;
+    border: 0;
+    margin-top: 30px;
+}
+
+.header-top-menu ul,
+.navbar ul {
+    width: auto;
+    text-align: center;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    margin-top: -10px;
+    position: relative;
+    display: inline-block;
+    left: 10px;
+    top: 15px;
+    z-index: 14;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.header-top-menu ul::before {
+    position: absolute;
+    bottom: 0;
+    border: 3px solid #039C46;
+    content: "";
+    width: 105%;
+}
+
+.header-top-menu ul li,
+.navbar ul li {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.header-top-menu ul li a,
+.navbar ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #9b9b9b;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 0.5s;
+    padding: 15px 30px;
+    display: block;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.header-top-menu ul li:hover,
+.navbar ul li:hover,
+li.menu-active {
+    background-color: #039C46 !important;
+    color: #fff !important;
+}
+
+/******** menu part end ********/
+
+.hour {
+    float: right;
+    margin: 30px 0 0;
+}
+
+.hour img {
+    width: 100px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar::before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    content: "";
+    background-color: #039C46;
+    width: 23%;
+    height: 70px;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.navbar ul {
+    display: flex;
+    float: left;
+    left: 40px;
+}
+
+.navbar ul li a {
+    padding: 30px 45px !important;
+}
+
+.navbar ul li {
+    border-right: 2px solid #434343;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.navbar ul li:last-child {
+    border: 0;
+}
+
+.hot-news {
+    transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.hot-news {
+    float: left;
+    margin-top: 30px;
+}
+
+.hot-news h5 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #039C46;
+}
+
+.hot-news h5 a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+}
+
+.marquee {
+    box-sizing: border-box;
+    color: #fff;
+    float: left;
+    margin: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    animation: marquee 50s linear infinite;
+}
+
+.marquee a {
+    color: #fff;
+}
+
+.hot-news h5 a,
+.marquee {
+
+    display: block;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+/*  ================================
+        Header area end
+    ================================ */
+
+/*  ================================
+        galler area start
+    ================================ */
+.csslider {
+    position: relative;
+}
+
+.csslider > input {
+    display: none;
+}
+
+.csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+    margin-left: -900%;
+}
+
+.csslider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+    margin-left: -800%;
+}
+
+.csslider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+    margin-left: -700%;
+}
+
+.csslider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+    margin-left: -600%;
+}
+
+.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+    margin-left: -500%;
+}
+
+.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+    margin-left: -400%;
+}
+
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+    margin-left: -300%;
+}
+
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+    margin-left: -200%;
+}
+
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+    margin-left: -100%;
+}
+
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+    margin-left: 0;
+}
+
+.csslider > ul {
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.csslider > ul > li {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: initial;
+    height: 100%;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1) 0s;
+    vertical-align: middle;
+    white-space: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.csslider > ul > li.scrollable {
+    overflow-y: scroll;
+}
+
+.csslider > .navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.csslider > .navigation label {
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+    vertical-align: middle;
+    height: 50px;
+    width: 65px;
+}
+
+.csslider > .navigation label img {
+    max-height: 100%;
+}
+
+.csslider > .navigation label:hover::after {
+    opacity: 1;
+}
+
+.csslider > .navigation label::after {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+    opacity: 0;
+    padding: 6px;
+    position: absolute;
+    top: 50%;
+}
+
+.csslider > .arrows {
+    -moz-user-select: none;
+}
+
+.csslider.inside .navigation {
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.csslider.inside .navigation label {
+    border: 1px solid #7e7e7e;
+}
+
+.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1)::after,
+.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2)::after,
+.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3)::after,
+.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4)::after,
+.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5)::after,
+.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6)::after,
+.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7)::after,
+.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8)::after,
+.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9)::after,
+.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10)::after,
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after {
+    opacity: 1;
+}
+
+.csslider > .arrows {
+    box-sizing: content-box;
+    height: 26px;
+    left: -31px;
+    padding: 0 31px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 0;
+}
+
+.csslider > .arrows label {
+    box-shadow: 2px -2px 0 1px #3a3a3a inset;
+    cursor: pointer;
+    display: none;
+    padding: 13px;
+    position: absolute;
+    top: -50%;
+    transition: box-shadow 0.15s ease 0s, margin 0.15s ease 0s;
+    z-index: 9999;
+}
+
+.csslider > .arrows label:hover {
+    box-shadow: 3px -3px 0 2px #039C46 inset;
+    margin: 0;
+}
+
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+    display: block;
+    left: -27px;
+    right: auto;
+    transform: rotate(45deg);
+}
+
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+    display: block;
+    left: auto;
+    right: -27px;
+    transform: rotate(225deg);
+}
+
+#slider1 > input:nth-of-type(3):checked ~ ul #bg {
+    padding: 22px;
+    transition: all 0.5s ease 0.5s;
+    width: 80%;
+}
+
+#slider1 > input:nth-of-type(3):checked ~ ul #bg div {
+    transform: translate(0px);
+    transition: all 0.5s ease 0.9s;
+}
+
+#slider1 > input:nth-of-type(6):checked ~ ul #dex-sign {
+    animation: 3.5s steps(85) 0.5s normal forwards 1 running sign-anim;
+}
+
+#bg {
+    color: #000;
+    height: 20%;
+    left: 0;
+    overflow: hidden;
+    padding: 22px 0;
+    position: absolute;
+    top: 16%;
+    width: 0;
+    z-index: 10;
+}
+
+#bg::before {
+    background: rgba(0, 0, 0, 0) url("https://raw.github.com/drygiel/csslider/master/examples/themes/fruit.jpg") repeat scroll 1px 23%;
+    content: "";
+    filter: blur(7px);
+    height: 100%;
+    left: -1px;
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    z-index: -1;
+}
+
+#bg::after {
+    background: rgba(0, 0, 0, 0.35) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+#bg div {
+    transform: translate(120%);
+}
+
+.scrollable p {
+    font-size: 120%;
+    line-height: 140%;
+    padding: 30px;
+    text-align: justify;
+}
+
+#center {
+    margin-top: 25%;
+    text-align: center;
+}
+
+#center a {
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.rt-container {
+    margin: 0 auto;
+    width: 76%;
+}
+
+.csslider ul li img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navigation > label {
+    border: 1px solid #ddd;
+    border-radius: 5px !important;
+    margin-bottom: 5px;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+}
+
+.lightbox:target {
+    outline: none;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    font-size: 30px;
+    opacity: 1;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    right: 2%;
+}
+
+.close:focus,
+.close:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/*  ================================
+        galler area end
+    ================================ */
+
+/*  ================================
+        product area start
+    ================================ */
+
+.sidebar-box {
+    border: 1px solid #D1D1D1;
+    text-align: center;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar-box h3 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    background-color: #F2F2F2;
+    margin-bottom: 15px;
+}
+
+.sidebar-box img {
+    width: 200px;
+}
+
+.product-wraper {
+    border: 1px solid #D1D1D1;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+.product-dec h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #039C46;
+    font-size: 24px;
+    margin: 20px 0 15px;
+    font-weight: 600;
+}
+
+.product-dec h3:first-child {
+    margin-top: 0;
+}
+
+.product-dec h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 17px;
+    line-height: 1.3;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.product-dec p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        tab area start
+    ================================ */
+
+.tab-part-area {
+    padding: 30px 0;
+}
+
+
+section.tab-section {
+    display: none;
+    padding: 40px 45px;
+    border: 1px solid #ccc;
+    color: #1a1a1a;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-part-area input {
+    display: none;
+}
+
+.tab-part-area label {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block !important;
+    color: #039C46;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #dfdfdf;
+    display: block;
+    height: 80px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    padding: 14px 10px 10px;
+    position: relative;
+    text-align: center;
+    width: 20%;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    transform-style: flat;
+    -webkit-transform-style: flat;
+    -moz-transformtransform-style: flat;
+    -ms-transform-style: flat;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.tab-part-area label:hover {
+    background-color: #039C46;
+    color: #fff;
+}
+
+.tab-part-area label span {
+    font-size: 15px;
+    display: block;
+    transform: rotate(0deg) scale(1.003) skew(14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.tab-part-area label:hover {
+    cursor: pointer;
+}
+
+.tab-part-area input:checked + label {
+    color: #fff;
+    border: 1px solid #039C46;
+    background-color: #039C46;
+}
+
+
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;
+}
+
+.tab-part-area section > p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-part-area section li {
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.tab-section h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #3a3a3a;
+    margin: 0 0 15px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tab-section h2 {
+    color: #3D3D3D;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tab-section p a {
+    color: #039C46;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-section p:last-child {
+    margin-bottom: 0;
+}
+
+.product-dec ul {
+    margin-bottom: 20px;
+}
+
+.tab-list ul li,
+.product-dec ul li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tab-list ul li::before,
+.product-dec ul li::before {
+    position: absolute;
+    content: "\f00c";
+    font-family: fontawesome;
+    left: 0;
+    color: #039C46;
+}
+
+.tab-list img {
+    margin-bottom: 20px;
+}
+
+/*  ================================
+        tab area end
+    ================================ */
+
+/*  ================================
+        Fetured Part Area
+    ================================ */
+
+.fetured-area {
+    padding: 80px 0;
+}
+
+.featured-title h3 {
+    color: #010101;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.featured-title hr {
+    background-color: #039C46;
+    border: medium none;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 3px;
+    position: relative;
+    width: 130px;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.featured-title hr::before {
+    border-left: 4px solid #F6F6F6;
+    border-right: 4px solid #F6F6F6;
+    content: "";
+    height: 30px;
+    left: 11px;
+    position: absolute;
+    top: -10px;
+    width: 110px;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.featured-title hr::after {
+    background: none repeat scroll 0 0 #000;
+    border: 3px solid #fff;
+    content: "";
+    height: 20px;
+    left: 59px;
+    padding: 0;
+    position: absolute;
+    top: -7px;
+    width: 20px;
+    transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-14deg) translate(0px);
+}
+
+.item-gallery {
+    padding: 80px 0 0;
+}
+.fb i.fa{
+    color: #FECD03;
+}
+/*  ================================
+        Footer Part Area
+    ================================ */
+
+.footer-area {
+    position: relative;
+}
+
+.footer-logo {
+    margin-top: 30px;
+}
+
+.footer-widget h3 {
+    margin-bottom: 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.title-line {
+    background: none repeat scroll 0 0 #039C46;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.title-line::after {
+    content: "";
+    left: 25px;
+    padding: 3px;
+    position: absolute;
+    top: 39px;
+    background-color: #010101;
+    width: 85%;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.footer-widget ul li {
+    width: 100%;
+    line-height: 24px;
+    margin: 0 0 7px;
+
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    color: #010101;
+}
+
+.footer-widget ul li::before {
+    position: absolute;
+    left: 0;
+    content: "\f105";
+    font-family: fontawesome;
+    color: #039C46;
+}
+
+.footer-widget ul li a {
+    color: #010101;
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.footer-widget ul li a:hover {
+    color: #039C46;
+}
+
+.footer-widget h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 56px;
+    font-weight: 600;
+}
+
+.footer-widget span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sub-btn {
+    background-color: #010101;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px !important;
+    margin-bottom: 0 !important;
+    display: inline-block;
+}
+
+.main-footer {
+    background: none repeat scroll 0 0 #010101;
+    margin: 30px 0;
+    padding: 30px 0;
+    position: relative;
+}
+
+.main-footer::before {
+    position: absolute;
+    top: -8px;
+    left: 30%;
+    content: "";
+    width: 40%;
+    height: 9px;
+    background-color: #039C46;
+    transform: rotate(0deg) scale(1.003) skew(26degdeg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(26deg) translate(0px);
+}
+
+.main-footer::after {
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+    content: "";
+    width: 40%;
+    height: 9px;
+    background-color: #039C46;
+    transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -webkit-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+    -ms-transform: rotate(0deg) scale(1.003) skew(-26deg) translate(0px);
+}
+
+.copy-right p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: capitalize;
+}
