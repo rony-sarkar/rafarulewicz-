@@ -323,6 +323,46 @@ li.menu-active {
     display: none;
 }
 
+.csslider > input:nth-of-type(20):checked ~ ul li:first-of-type {
+    margin-left: -1900%;
+}
+
+.csslider > input:nth-of-type(19):checked ~ ul li:first-of-type {
+    margin-left: -1800%;
+}
+
+.csslider > input:nth-of-type(18):checked ~ ul li:first-of-type {
+    margin-left: -1700%;
+}
+
+.csslider > input:nth-of-type(17):checked ~ ul li:first-of-type {
+    margin-left: -1600%;
+}
+
+.csslider > input:nth-of-type(16):checked ~ ul li:first-of-type {
+    margin-left: -1500%;
+}
+
+.csslider > input:nth-of-type(15):checked ~ ul li:first-of-type {
+    margin-left: -1400%;
+}
+
+.csslider > input:nth-of-type(14):checked ~ ul li:first-of-type {
+    margin-left: -1300%;
+}
+
+.csslider > input:nth-of-type(13):checked ~ ul li:first-of-type {
+    margin-left: -1200%;
+}
+
+.csslider > input:nth-of-type(12):checked ~ ul li:first-of-type {
+    margin-left: -1100%;
+}
+
+.csslider > input:nth-of-type(11):checked ~ ul li:first-of-type {
+    margin-left: -1000%;
+}
+
 .csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
     margin-left: -900%;
 }
@@ -455,7 +495,16 @@ li.menu-active {
 .csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8)::after,
 .csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9)::after,
 .csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10)::after,
-.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after {
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after,
+.csslider > input:nth-of-type(12):checked ~ .navigation label:nth-of-type(12)::after,
+.csslider > input:nth-of-type(13):checked ~ .navigation label:nth-of-type(13)::after,
+.csslider > input:nth-of-type(14):checked ~ .navigation label:nth-of-type(14)::after,
+.csslider > input:nth-of-type(15):checked ~ .navigation label:nth-of-type(15)::after,
+.csslider > input:nth-of-type(16):checked ~ .navigation label:nth-of-type(16)::after,
+.csslider > input:nth-of-type(17):checked ~ .navigation label:nth-of-type(17)::after,
+.csslider > input:nth-of-type(18):checked ~ .navigation label:nth-of-type(18)::after,
+.csslider > input:nth-of-type(19):checked ~ .navigation label:nth-of-type(19)::after,
+.csslider > input:nth-of-type(20):checked ~ .navigation label:nth-of-type(20)::after {
     opacity: 1;
 }
 
@@ -497,7 +546,17 @@ li.menu-active {
 .csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
 .csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
 .csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
-.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(12):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(13):checked ~ .arrows > label:nth-of-type(12),
+.csslider > input:nth-of-type(14):checked ~ .arrows > label:nth-of-type(13),
+.csslider > input:nth-of-type(15):checked ~ .arrows > label:nth-of-type(14),
+.csslider > input:nth-of-type(16):checked ~ .arrows > label:nth-of-type(15),
+.csslider > input:nth-of-type(17):checked ~ .arrows > label:nth-of-type(16),
+.csslider > input:nth-of-type(18):checked ~ .arrows > label:nth-of-type(17),
+.csslider > input:nth-of-type(19):checked ~ .arrows > label:nth-of-type(18),
+.csslider > input:nth-of-type(20):checked ~ .arrows > label:nth-of-type(19),
+.csslider > input:nth-of-type(21):checked ~ .arrows > label:nth-of-type(20) {
     display: block;
     left: -27px;
     right: auto;
@@ -943,9 +1002,11 @@ section.tab-section {
 .item-gallery {
     padding: 80px 0 0;
 }
-.fb i.fa{
+
+.fb i.fa {
     color: #FECD03;
 }
+
 /*  ================================
         Footer Part Area
     ================================ */
