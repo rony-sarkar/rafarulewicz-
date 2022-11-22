@@ -574,7 +574,18 @@ li.menu-active {
 .csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
 .csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
 .csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
-.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12),
+.csslider > input:nth-of-type(12):checked ~ .arrows > label:nth-of-type(13),
+.csslider > input:nth-of-type(13):checked ~ .arrows > label:nth-of-type(14),
+.csslider > input:nth-of-type(14):checked ~ .arrows > label:nth-of-type(15),
+.csslider > input:nth-of-type(15):checked ~ .arrows > label:nth-of-type(16),
+.csslider > input:nth-of-type(16):checked ~ .arrows > label:nth-of-type(17),
+.csslider > input:nth-of-type(17):checked ~ .arrows > label:nth-of-type(18),
+.csslider > input:nth-of-type(18):checked ~ .arrows > label:nth-of-type(19),
+.csslider > input:nth-of-type(19):checked ~ .arrows > label:nth-of-type(20),
+.csslider > input:nth-of-type(20):checked ~ .arrows > label:nth-of-type(21),
+.csslider > input:nth-of-type(21):checked ~ .arrows > label:nth-of-type(22),
+.csslider > input:nth-of-type(22):checked ~ .arrows > label:nth-of-type(23) {
     display: block;
     left: auto;
     right: -27px;
